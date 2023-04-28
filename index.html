@@ -1,22 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Pokemon Search</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <title>Pokemon Search</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container">
-		<h1>Pokemon Search</h1>
-		<form>
-			<label for="pokemon-name">Search for a Pokemon:</label>
-			<div class="search-bar">
-				<input type="text" id="pokemon-name" name="pokemon-name">
-				<button type="submit" id="search-btn">Search</button>
-			</div>
-		</form>
-		<div id="result"></div>
-	</div>
-
-	<script src="app.js"></script>
+  <header>
+    <h1 class="logo">Pokémon</h1>
+    <div class="search-container">
+      <form>
+        <input type="text" id="pokemon-name" placeholder="Enter a Pokémon name">
+        <button type="submit">Search</button>
+      </form>
+      <label for="type-filter">Filter by Type:</label>
+      <select id="type-filter">
+        <option value="all">All</option>
+        <option value="normal">Normal</option>
+        <option value="fighting">Fighting</option>
+        <option value="flying">Flying</option>
+        <option value="poison">Poison</option>
+        <option value="ground">Ground</option>
+        <option value="rock">Rock</option>
+        <option value="bug">Bug</option>
+        <option value="ghost">Ghost</option>
+        <option value="steel">Steel</option>
+        <option value="fire">Fire</option>
+        <option value="water">Water</option>
+        <option value="grass">Grass</option>
+        <option value="electric">Electric</option>
+        <option value="psychic">Psychic</option>
+        <option value="ice">Ice</option>
+        <option value="dragon">Dragon</option>
+        <option value="dark">Dark</option>
+        <option value="fairy">Fairy</option>
+      </select>
+      <button id="see-all">See All</button>
+    </div>
+  </header>
+  <main>
+    <div id="result"></div>
+  </main>
 </body>
-</html>
